@@ -1,0 +1,12 @@
+{
+  "name": "manage-landing-page",
+  "version": "1.0.0",
+  "description": "![Design preview for the Manage landing page coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "sass-dev": "sass --watch --update  --no-source-map scss/style.scss css/style.css",
+    "sass-prod": "sass --no-source-map --style=compressed scss/style.scss css/style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
