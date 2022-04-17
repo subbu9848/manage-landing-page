@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
 *,
 *::before,
 *::after {
@@ -20,6 +25,13 @@ body {
   color: #fff;
   border-radius: 50px;
   text-decoration: none;
+}
+
+.btn-rounded {
+  background-color: hsl(12deg, 88%, 59%);
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 50px;
 }
 
 .btn-secondary {
@@ -128,10 +140,15 @@ ul {
   display: flex;
 }
 
+.inline-flex h3 {
+  margin: 6px 0;
+}
+
 span {
   background-color: hsl(12deg, 88%, 59%);
   margin-right: 10%;
-  padding: 10px 30px;
+  padding: 14px 30px;
+  height: 50px;
   border-radius: 50px;
   color: #fff;
 }
@@ -167,10 +184,10 @@ span {
 }
 
 .footer .bottom-nav {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 25px 5px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0px 50px;
+  margin-top: 5%;
 }
 
 .footer li {
@@ -183,7 +200,7 @@ span {
 }
 
 input[type=text] {
-  padding: 10px 0;
+  padding: 10px;
   border-radius: 50px;
   border: none;
 }
@@ -201,11 +218,97 @@ input[type=text] {
 .inline-items {
   display: flex;
   justify-content: space-between;
-  opacity: 0.5;
-  margin-right: 10%;
+  padding: 14px 50px;
 }
 
-.container {
-  width: 80%;
-  margin: 0 auto;
+.fa-brands {
+  margin: 0 4px;
+  font-size: 20px;
+}
+
+.inline-items p {
+  opacity: 0.5;
+}
+
+@media (max-width: 34em) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .top-nav {
+    margin: 20% 0;
+    flex-direction: column;
+  }
+
+  .top-nav-btn {
+    display: none;
+  }
+
+  .top-nav .middle-menu {
+    margin: 10% 0;
+    padding: 15px 0;
+    flex-direction: column;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    padding: 0 4px;
+  }
+
+  .hero h1 {
+    text-align: center;
+    font-size: 36px;
+    padding: 0 4px;
+    margin: 0 10px;
+  }
+
+  .hero p {
+    text-align: center;
+    line-height: 1.9;
+  }
+
+  .hero img {
+    width: 100%;
+  }
+
+  .hero-btn {
+    margin-left: 30%;
+  }
+
+  .list-content {
+    flex-direction: column;
+    margin-left: -1%;
+  }
+
+  .list-items {
+    margin: 4px;
+  }
+
+  .list-items p {
+    padding: 4px;
+    margin: 4px;
+  }
+
+  span {
+    margin-right: -25%;
+  }
+
+  .inline-flex h3 {
+    margin-right: 5%;
+  }
+
+  .cta {
+    flex-direction: column;
+  }
+
+  .cta h1 {
+    text-align: center;
+    max-width: 100%;
+    margin: 20px 0;
+  }
+
+  .btn-cta {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
 }

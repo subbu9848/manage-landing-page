@@ -4,3 +4,24 @@
   width: 80%;
   margin: 0 auto;
 }
+
+@mixin container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+// flex-box
+@mixin flex() {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 30vh;
+}
+
+@mixin flex2() {
+  display: flex;
+  //   align-items: center;
+}
+
+// grid

@@ -32,12 +32,6 @@ $Vary-Light-Gray: hsl(0, 0%, 98%);
   opacity: 0.5;
 }
 
-@mixin container {
-  width: 80%;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 // padding-margin
 @mixin margin {
   margin: 30px 40px;
@@ -46,21 +40,6 @@ $Vary-Light-Gray: hsl(0, 0%, 98%);
 @mixin padding {
   padding: 10px 20px;
 }
-
-// flex-box
-@mixin flex() {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 30vh;
-}
-
-@mixin flex2() {
-  display: flex;
-  //   align-items: center;
-}
-
-// grid
 
 // Utility Classes
 // btn-primary
@@ -71,6 +50,15 @@ $Vary-Light-Gray: hsl(0, 0%, 98%);
   color: #fff;
   border-radius: 50px;
   text-decoration: none;
+}
+
+//  btn-rounded
+
+.btn-rounded {
+  background-color: $Bright-Red;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 50px;
 }
 
 // btn-secondary
